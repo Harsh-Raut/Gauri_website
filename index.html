@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gauri Tidke — Singer, Songwriter, Guitarist</title>
+<meta name="description" content="Gauri Tidke — Hindi indie artist. Voice, guitar, and a story in every song. Watch the latest releases and work with Gauri on collaborations and live shows.">
+
+<!-- ============================================================
+     EDIT GUIDE (search for these tags to drop in your content):
+       [PHOTO-HERO]      → hero portrait of Gauri
+       [PHOTO-ABOUT]     → about-section portrait
+       [YT-CHANNEL]      → main YouTube channel URL
+       [YT-SONG-x]       → individual song video URLs
+       [SONG-TITLE-x]    → song names
+       [BIO]             → her real bio paragraph
+       [METRIC]          → live numbers (subs, views, streams)
+       [BOOK-EMAIL]      → booking / collab email
+       [WHATSAPP]        → booking WhatsApp number
+       [INSTAGRAM]       → instagram.com/gauritidke_smile
+       [SPOTIFY] [SAAVN] → streaming profile URLs
+   ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Familjen+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --midnight:#15122b;
+    --midnight-deep:#0d0b1c;
+    --amber:#e8a04a;
+    --amber-soft:#f3c987;
+    --rose:#d98a8a;
+    --cream:#f4ede0;
+    --cream-dim:#bdb4a6;
+    --line:rgba(244,237,224,.14);
+    --display:'Fraunces', Georgia, serif;
+    --body:'Familjen Grotesk', system-ui, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;overflow-x:hidden;width:100%}
+  body{
+    background:var(--midnight-deep);
+    color:var(--cream);
+    font-family:var(--body);
+    line-height:1.6;
+    overflow-x:hidden;
+    width:100%;max-width:100%;position:relative;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* grain */
+  body::after{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.045;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--amber);font-weight:600;
+  }
+  .hero-copy .eyebrow{
+    display:inline-block;letter-spacing:.22em;color:var(--amber-soft);
+    text-shadow:0 1px 12px rgba(0,0,0,.7);
+  }
+
+  /* ---------- glow orbs ---------- */
+  .orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;z-index:0;pointer-events:none}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 28px;backdrop-filter:blur(10px);
+    background:linear-gradient(to bottom,rgba(13,11,28,.85),transparent);
+    transition:background .3s;
+  }
+  nav .brand{font-family:var(--display);font-size:1.25rem;font-weight:500;letter-spacing:.01em}
+  nav .brand span{color:var(--amber)}
+  nav .links{display:flex;gap:30px;align-items:center;font-size:.9rem}
+  nav .links a{color:var(--cream-dim);transition:color .2s}
+  nav .links a:hover{color:var(--cream)}
+  nav .nav-cta{
+    border:1px solid var(--amber);color:var(--amber);
+    padding:8px 18px;border-radius:40px;font-weight:500;transition:all .2s;
+  }
+  nav .nav-cta:hover{background:var(--amber);color:var(--midnight-deep)}
+  .menu-btn{display:none;background:none;border:none;color:var(--cream);font-size:1.5rem;cursor:pointer}
+
+  /* ---------- hero ---------- */
+  header.hero{
+    position:relative;min-height:100vh;display:flex;align-items:flex-end;
+    overflow:hidden;padding-top:90px;text-align:left;
+  }
+  .hero-bg{position:absolute;inset:0;z-index:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% center;transform:scaleX(-1)}
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(to left,rgba(13,11,28,.95) 0%,rgba(13,11,28,.85) 22%,rgba(13,11,28,.4) 44%,transparent 62%),
+      linear-gradient(to top,var(--midnight-deep) 0%,rgba(13,11,28,.6) 26%,rgba(13,11,28,.08) 58%,transparent 82%);
+  }
+  .hero-grid{
+    position:relative;z-index:2;width:100%;padding-bottom:9vh;
+    display:flex;justify-content:flex-end;text-align:left;
+  }
+  /* hero copy sits center-right — clear gap after Gauri, not jammed to edge */
+  .hero .wrap{max-width:100%;width:100%;margin:0;padding-right:clamp(40px,22vw,430px);padding-left:28px}
+  .hero-copy{max-width:min(660px,100%);text-align:left;margin:0}
+  .hero-copy h1{
+    font-family:var(--display);font-weight:400;
+    font-size:clamp(2.6rem,5.5vw,4.8rem);line-height:1.04;letter-spacing:-.02em;
+    margin:18px 0 22px;text-shadow:0 2px 40px rgba(0,0,0,.8);
+  }
+  .hero-copy h1 .l1{display:block}
+  .hero-copy h1 em{font-style:italic;color:var(--amber-soft)}
+  .hero-copy .sub{
+    font-size:1.18rem;color:var(--cream);max-width:38ch;margin:0 0 34px;
+    text-shadow:0 1px 18px rgba(0,0,0,.85);
+  }
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:flex-start}
+  .btn-primary{
+    background:var(--amber);color:var(--midnight-deep);font-weight:600;
+    padding:15px 30px;border-radius:46px;font-size:1rem;display:inline-flex;
+    align-items:center;gap:10px;transition:transform .2s,box-shadow .2s;
+    box-shadow:0 8px 30px rgba(232,160,74,.3);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(232,160,74,.45)}
+  .btn-outline{
+    border:1px solid rgba(244,237,224,.5);color:var(--cream);font-weight:600;
+    padding:15px 28px;border-radius:46px;font-size:1rem;display:inline-flex;
+    align-items:center;gap:10px;transition:all .2s;backdrop-filter:blur(4px);
+    background:rgba(13,11,28,.25);
+  }
+  .btn-outline:hover{border-color:var(--amber);color:var(--amber)}
+  .btn-ghost{
+    color:var(--cream);font-weight:500;padding:15px 8px;display:inline-flex;
+    align-items:center;gap:9px;border-bottom:1px solid transparent;transition:border .2s;
+  }
+  .btn-ghost:hover{border-bottom-color:var(--amber)}
+
+  /* ---------- marquee strip ---------- */
+  .strip{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:var(--midnight);padding:18px 0;overflow:hidden;white-space:nowrap;
+  }
+  .strip-track{display:inline-flex;gap:48px;animation:slide 28s linear infinite;font-family:var(--display);font-style:italic;font-size:1.3rem;color:var(--cream-dim)}
+  .strip-track span{display:inline-flex;align-items:center;gap:48px}
+  .strip-track b{color:var(--amber);font-style:normal;font-weight:400}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  /* ---------- section base ---------- */
+  section{position:relative;padding:110px 0;overflow:hidden}
+  .sec-head{margin-bottom:54px;max-width:60ch}
+  .sec-head h2{
+    font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,4.5vw,3.4rem);
+    line-height:1.05;letter-spacing:-.015em;margin:14px 0;
+  }
+  .sec-head p{color:var(--cream-dim);font-size:1.08rem}
+
+  /* ---------- about ---------- */
+  #about{background:var(--midnight-deep)}
+  #about .orb{width:360px;height:360px;background:var(--amber);top:20%;right:-120px;opacity:.14}
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center;position:relative;z-index:2}
+  .about-portrait{
+    aspect-ratio:4/5;border-radius:14px;overflow:hidden;
+    background:linear-gradient(160deg,#241d3e,#15122b);border:1px solid var(--line);
+  }
+  .about-portrait .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--cream-dim);font-size:.8rem}
+  .about-portrait{position:relative}
+  .about-text h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,4vw,3rem);line-height:1.06;margin:14px 0 22px}
+  .about-text p{color:var(--cream-dim);margin-bottom:18px;font-size:1.06rem;max-width:54ch}
+  .about-text p .lead{color:var(--cream)}
+  .about-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+  .about-tags span{
+    border:1px solid var(--line);border-radius:40px;padding:7px 16px;
+    font-size:.85rem;color:var(--cream);
+  }
+
+  /* ---------- featured release ---------- */
+  .featured{
+    position:relative;border-radius:16px;overflow:hidden;margin-bottom:40px;
+    border:1px solid var(--line);display:block;
+    box-shadow:0 30px 70px rgba(0,0,0,.45);transition:transform .35s,border-color .35s;
+  }
+  .featured:hover{transform:translateY(-4px);border-color:var(--amber)}
+  .featured img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+  .featured .feat-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(13,11,28,.9) 0%,rgba(13,11,28,.25) 30%,transparent 55%);
+    display:flex;align-items:flex-end;padding:34px;
+  }
+  .featured .feat-inner{position:relative;z-index:2}
+  .featured .feat-play{
+    position:absolute;top:24px;left:24px;width:60px;height:60px;border-radius:50%;
+    background:rgba(232,160,74,.92);display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 30px rgba(232,160,74,.5);transition:transform .25s;
+  }
+  .featured:hover .feat-play{transform:scale(1.08)}
+  .featured .feat-tag{
+    display:inline-block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--midnight-deep);background:var(--amber);font-weight:700;
+    padding:6px 14px;border-radius:30px;margin-bottom:12px;
+  }
+  .featured h3{font-family:var(--display);font-weight:500;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1;margin-bottom:6px}
+  .featured h3 .hindi{display:block;font-size:.62em;color:var(--amber-soft);margin-top:4px}
+  .featured .feat-sub{color:var(--cream-dim);font-size:1rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .featured .feat-watch{
+    display:inline-flex;align-items:center;gap:8px;margin-top:16px;
+    color:var(--amber);font-weight:600;font-size:.95rem;
+  }
+  /* countdown */
+  .countdown{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .cd-unit{display:flex;flex-direction:column;align-items:center;min-width:54px}
+  .cd-num{
+    font-family:var(--display);font-size:clamp(1.7rem,3.5vw,2.6rem);line-height:1;
+    color:var(--cream);font-weight:500;font-variant-numeric:tabular-nums;
+  }
+  .cd-lab{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-dim);margin-top:6px}
+  .cd-sep{font-family:var(--display);font-size:1.8rem;color:var(--amber);opacity:.6;align-self:flex-start;margin-top:2px}
+  .feat-reminder{
+    display:inline-flex;align-items:center;gap:9px;
+    background:var(--amber);color:var(--midnight-deep);font-weight:600;font-size:.95rem;
+    padding:13px 24px;border-radius:46px;transition:transform .2s,box-shadow .2s;
+    box-shadow:0 8px 28px rgba(232,160,74,.3);
+  }
+  .feat-reminder:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(232,160,74,.45)}
+  .feat-live{
+    display:inline-flex;align-items:center;gap:8px;margin-top:4px;
+    color:var(--amber);font-weight:600;font-size:.95rem;
+  }
+  @media(max-width:560px){
+    .featured .feat-overlay{background:linear-gradient(to top,rgba(13,11,28,.92),rgba(13,11,28,.2));padding:22px}
+    .featured .feat-play{width:48px;height:48px;top:16px;left:16px}
+  }
+
+
+  .song-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .song-card{
+    position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);
+    background:linear-gradient(170deg,#221c3c,#16122c);
+    aspect-ratio:16/10;display:flex;flex-direction:column;justify-content:flex-end;
+    transition:transform .3s,border-color .3s;cursor:pointer;
+  }
+  .song-card:hover{transform:translateY(-5px);border-color:var(--amber)}
+  .song-thumb{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    color:var(--cream-dim);font-size:.78rem;letter-spacing:.04em;
+  }
+  .song-card .play{
+    position:absolute;top:16px;right:16px;width:42px;height:42px;border-radius:50%;
+    background:rgba(13,11,28,.6);backdrop-filter:blur(6px);display:flex;align-items:center;
+    justify-content:center;border:1px solid var(--line);transition:background .2s;
+  }
+  .song-card:hover .play{background:var(--amber)}
+  .song-card:hover .play svg{fill:var(--midnight-deep)}
+  .song-meta{
+    position:relative;z-index:2;padding:20px;
+    background:linear-gradient(to top,rgba(13,11,28,.92),transparent);
+  }
+  .song-meta .tag{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);font-weight:600}
+  .song-meta h3{font-family:var(--display);font-weight:500;font-size:1.4rem;margin-top:4px}
+  .song-meta .feat{font-size:.85rem;color:var(--cream-dim)}
+  .song-card.upcoming{opacity:.78}
+  .song-card.upcoming .play{display:none}
+  .song-card.upcoming .lock{
+    position:absolute;top:16px;right:16px;font-size:.7rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--cream-dim);border:1px solid var(--line);
+    padding:5px 11px;border-radius:30px;
+  }
+  .music-cta{text-align:center;margin-top:48px}
+
+  /* ---------- metrics / proof ---------- */
+  #reach{background:var(--midnight-deep);text-align:center}
+  #reach .orb{width:440px;height:440px;background:var(--rose);top:-100px;left:50%;transform:translateX(-50%);opacity:.16}
+  .metric-grid{
+    position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);
+    gap:20px;margin-top:50px;
+  }
+  .metric{
+    border:1px solid var(--line);border-radius:14px;padding:34px 18px;
+    background:rgba(244,237,224,.02);
+  }
+  .metric .num{font-family:var(--display);font-size:clamp(2.2rem,4vw,3.2rem);color:var(--amber-soft);line-height:1}
+  .metric .lab{font-size:.85rem;color:var(--cream-dim);margin-top:10px;letter-spacing:.04em}
+  .metric .note{font-size:.7rem;color:var(--cream-dim);opacity:.6;margin-top:4px}
+  .platforms{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:46px}
+  .platforms a{
+    border:1px solid var(--line);border-radius:40px;padding:11px 22px;font-size:.9rem;
+    color:var(--cream);display:inline-flex;align-items:center;gap:9px;transition:all .2s;
+  }
+  .platforms a:hover{border-color:var(--amber);color:var(--amber)}
+
+  /* ---------- instagram ---------- */
+  #social{background:var(--midnight);position:relative;overflow:hidden}
+  #social .orb{width:400px;height:400px;background:var(--rose);bottom:-140px;left:-100px;opacity:.16}
+  .social-head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:46px;position:relative;z-index:2}
+  .social-head h2{font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,4.5vw,3.4rem);line-height:1.04;margin:14px 0 8px}
+  .social-head .handle{color:var(--cream-dim);font-size:1.05rem}
+  .social-head .handle a{color:var(--amber)}
+  .ig-follow{
+    display:inline-flex;align-items:center;gap:10px;flex-shrink:0;
+    background:linear-gradient(135deg,#f58529,#dd2a7b 50%,#8134af);
+    color:#fff;font-weight:600;padding:14px 26px;border-radius:46px;font-size:1rem;
+    transition:transform .2s,box-shadow .2s;box-shadow:0 8px 30px rgba(221,42,123,.3);
+  }
+  .ig-follow:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(221,42,123,.45)}
+  .ig-embed{
+    position:relative;z-index:2;border:1px solid var(--line);border-radius:16px;
+    background:rgba(244,237,224,.02);padding:14px;min-height:340px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  /* placeholder shown until the live widget embed is pasted in */
+  .ig-placeholder{
+    text-align:center;color:var(--cream-dim);padding:50px 24px;max-width:52ch;
+  }
+  .ig-placeholder svg{opacity:.45;margin-bottom:18px}
+  .ig-placeholder h4{font-family:var(--display);font-weight:400;font-size:1.3rem;color:var(--cream);margin-bottom:10px}
+  .ig-placeholder p{font-size:.95rem;line-height:1.6}
+  .ig-placeholder code{background:rgba(244,237,224,.08);padding:2px 7px;border-radius:5px;font-size:.85em;color:var(--amber-soft)}
+
+  /* ---------- testimonials ---------- */
+  #praise{background:var(--midnight);position:relative;overflow:hidden}
+  #praise .orb{width:420px;height:420px;background:var(--amber);top:-120px;right:-120px;opacity:.13}
+  .praise-head{text-align:center;max-width:60ch;margin:0 auto 56px;position:relative;z-index:2}
+  .praise-head h2{font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,4.5vw,3.4rem);line-height:1.05;margin:14px 0}
+  .praise-head p{color:var(--cream-dim);font-size:1.08rem}
+  .praise-carousel{position:relative;z-index:2}
+  .praise-track-outer{overflow:hidden;padding:4px 2px}
+  .praise-track{display:flex;gap:22px;transition:transform .52s cubic-bezier(.25,.46,.45,.94);will-change:transform}
+  .praise-card{
+    flex:0 0 calc(33.333% - 15px);min-width:0;
+    border:1px solid var(--line);border-radius:16px;padding:30px 28px;
+    background:rgba(244,237,224,.025);display:flex;flex-direction:column;
+  }
+  .praise-arrow{
+    position:absolute;top:50%;transform:translateY(-50%);z-index:4;
+    width:46px;height:46px;border-radius:50%;border:1px solid var(--line);
+    background:rgba(13,11,28,.8);backdrop-filter:blur(8px);
+    color:var(--cream);cursor:pointer;display:flex;align-items:center;justify-content:center;
+    transition:border-color .2s,background .2s,color .2s;padding:0;
+  }
+  .praise-arrow:hover{border-color:var(--amber);color:var(--amber);background:rgba(232,160,74,.1)}
+  .praise-arrow.praise-prev{left:-23px}
+  .praise-arrow.praise-next{right:-23px}
+  .praise-nav{display:flex;justify-content:center;margin-top:36px;position:relative;z-index:2}
+  .praise-dots{display:flex;gap:8px;align-items:center}
+  .praise-dot{width:8px;height:8px;border-radius:50%;background:rgba(244,237,224,.22);cursor:pointer;transition:all .25s;border:none;padding:0}
+  .praise-dot.active{background:var(--amber);width:24px;border-radius:4px}
+  .praise-card .stars{display:flex;gap:3px;margin-bottom:16px;color:var(--amber)}
+  .praise-card blockquote{
+    font-family:var(--display);font-weight:400;font-size:1.12rem;line-height:1.5;
+    color:var(--cream);font-style:italic;margin-bottom:22px;flex:1;
+  }
+  .praise-card .who{display:flex;align-items:center;gap:13px;margin-top:auto}
+  .praise-card .avatar{
+    width:44px;height:44px;border-radius:50%;flex-shrink:0;
+    background:linear-gradient(135deg,var(--amber),var(--rose));
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-size:1.1rem;color:var(--midnight-deep);font-weight:600;
+  }
+  .praise-card .who .name{font-weight:600;color:var(--cream);font-size:.96rem}
+  .praise-card .who .role{font-size:.85rem;color:var(--cream-dim)}
+
+  #work{
+    background:linear-gradient(160deg,var(--midnight) 0%,#1d1838 100%);
+    border-top:1px solid var(--line);
+  }
+  #work .orb{width:480px;height:480px;background:var(--amber);bottom:-160px;right:-100px;opacity:.2}
+  .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative;z-index:2}
+  .work-text h2{font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.04;margin:16px 0 20px}
+  .work-text p{color:var(--cream-dim);font-size:1.08rem;max-width:46ch;margin-bottom:14px}
+  .work-list{list-style:none;margin:28px 0}
+  .work-list li{
+    display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line);
+  }
+  .work-list li svg{flex-shrink:0;margin-top:3px}
+  .work-list b{font-weight:600;color:var(--cream)}
+  .work-list span{color:var(--cream-dim);font-size:.95rem}
+  .work-card{
+    border:1px solid var(--line);border-radius:18px;padding:40px 34px;
+    background:rgba(13,11,28,.55);backdrop-filter:blur(8px);
+    box-shadow:0 30px 70px rgba(0,0,0,.4);
+  }
+  .work-card .eyebrow{margin-bottom:10px}
+  .work-card h3{font-family:var(--display);font-weight:400;font-size:1.7rem;margin-bottom:8px}
+  .work-card p{color:var(--cream-dim);font-size:.96rem;margin-bottom:26px}
+  .work-card .field{margin-bottom:14px}
+  .work-card label{display:block;font-size:.78rem;color:var(--cream-dim);letter-spacing:.08em;text-transform:uppercase;margin-bottom:7px}
+  .work-card a.bigbtn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--amber);color:var(--midnight-deep);font-weight:600;
+    padding:16px;border-radius:46px;margin-bottom:12px;transition:transform .2s;
+  }
+  .work-card a.bigbtn:hover{transform:translateY(-2px)}
+  .work-card a.altbtn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    border:1px solid var(--line);color:var(--cream);font-weight:500;
+    padding:15px;border-radius:46px;transition:border .2s;
+  }
+  .work-card a.altbtn:hover{border-color:var(--amber)}
+  /* form fields */
+  .work-card form{margin-bottom:12px}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .work-card input,.work-card select,.work-card textarea{
+    width:100%;background:rgba(244,237,224,.05);border:1px solid var(--line);
+    border-radius:10px;padding:11px 14px;color:var(--cream);font-family:var(--body);
+    font-size:.95rem;transition:border .2s;
+  }
+  .work-card input::placeholder,.work-card textarea::placeholder{color:var(--cream-dim);opacity:.6}
+  .work-card input:focus,.work-card select:focus,.work-card textarea:focus{
+    outline:none;border-color:var(--amber);
+  }
+  .work-card select{appearance:none;cursor:pointer;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23bdb4a6' stroke-width='2'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+  .work-card textarea{resize:vertical;min-height:72px}
+  .work-card button.bigbtn{
+    width:100%;display:flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--amber);color:var(--midnight-deep);font-weight:600;font-family:var(--body);
+    padding:15px;border-radius:46px;margin-top:6px;border:none;cursor:pointer;font-size:1rem;
+    transition:transform .2s;
+  }
+  .work-card button.bigbtn:hover{transform:translateY(-2px)}
+  .work-card button.bigbtn:disabled{opacity:.35;cursor:not-allowed;transform:none}
+  .work-card .altbtn.disabled{opacity:.35;pointer-events:none;cursor:not-allowed}
+  .reply-note{text-align:center;font-size:.82rem;color:var(--cream-dim);margin-top:14px;opacity:.8}
+  /* form success banner */
+  .form-success{
+    background:rgba(232,160,74,.12);border:1px solid var(--amber);border-radius:12px;
+    padding:18px 20px;color:var(--cream);margin-bottom:18px;font-size:.95rem;
+  }
+  .form-success b{color:var(--amber-soft)}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--midnight-deep);padding:70px 0 40px;border-top:1px solid var(--line);position:relative}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:30px}
+  .foot-brand{font-family:var(--display);font-size:2.2rem;font-weight:400}
+  .foot-brand span{color:var(--amber)}
+  .foot-brand p{font-family:var(--body);font-size:.95rem;color:var(--cream-dim);margin-top:8px;max-width:32ch}
+  .foot-social{display:flex;gap:18px;margin-top:20px}
+  .foot-social a{color:var(--cream-dim);transition:color .2s}
+  .foot-social a:hover{color:var(--amber)}
+  .foot-links{display:flex;flex-direction:column;gap:12px;font-size:.95rem}
+  .foot-links a{color:var(--cream-dim);transition:color .2s}
+  .foot-links a:hover{color:var(--cream)}
+  .foot-bottom{
+    margin-top:54px;padding-top:24px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    font-size:.82rem;color:var(--cream-dim);
+  }
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:900px){
+    nav .links{display:none}
+    nav .links.open{
+      display:flex;flex-direction:column;position:absolute;top:100%;right:0;left:0;
+      background:rgba(13,11,28,.97);backdrop-filter:blur(12px);padding:18px 28px;gap:18px;
+      border-top:1px solid var(--line);
+    }
+    nav .links.open .nav-cta{text-align:center}
+    .menu-btn{display:block}
+    .hero{align-items:flex-end}
+    .hero .wrap{padding-left:28px;padding-right:28px}
+    .hero-grid{justify-content:flex-start}
+    .hero-copy{max-width:100%}
+    .hero-bg img{object-position:72% 35%}
+    .hero-bg::after{
+      background:
+        linear-gradient(to top,var(--midnight-deep) 2%,rgba(13,11,28,.78) 32%,rgba(13,11,28,.3) 62%,rgba(13,11,28,.4) 100%);
+    }
+    .about-grid,.work-grid{grid-template-columns:1fr;gap:34px}
+    .about-portrait{max-width:420px;margin:0 auto;width:100%}
+    .song-grid{grid-template-columns:1fr 1fr}
+    .metric-grid{grid-template-columns:1fr 1fr}
+    .social-head{flex-direction:column;align-items:flex-start}
+    .praise-card{flex:0 0 calc(50% - 11px)}
+    .praise-arrow.praise-prev{left:-10px}
+    .praise-arrow.praise-next{right:-10px}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 18px}
+    section{padding:72px 0}
+    /* ── mobile hero: stacked image-top / copy-bottom ── */
+    header.hero{flex-direction:column;align-items:stretch;padding-top:0;min-height:100svh}
+    .hero-bg{position:relative;inset:auto;height:56svh;flex-shrink:0;z-index:0}
+    .hero-bg img{object-position:72% center}
+    .hero-bg::after{
+      background:linear-gradient(to bottom,rgba(13,11,28,.22) 0%,rgba(13,11,28,.06) 45%,rgba(13,11,28,.7) 82%,var(--midnight-deep) 100%);
+    }
+    .hero .wrap{
+      flex:1;background:var(--midnight-deep);
+      padding:28px 24px 36px;
+      display:flex;flex-direction:column;justify-content:flex-start;
+    }
+    .hero-grid{padding-bottom:0;justify-content:flex-start}
+    .hero-copy .eyebrow{font-size:.64rem;letter-spacing:.16em}
+    .hero-copy h1{font-size:clamp(2.3rem,9vw,3.2rem)}
+    .hero-copy .sub{font-size:1.02rem}
+    .hero-actions{gap:12px}
+    .hero-actions .btn-primary,.hero-actions .btn-outline{
+      width:100%;justify-content:center;
+    }
+    .song-grid{grid-template-columns:1fr}
+    .metric-grid{grid-template-columns:1fr 1fr}
+    .field-row{grid-template-columns:1fr}
+    .countdown{gap:8px}
+    .cd-unit{min-width:42px}
+    .cd-sep{font-size:1.3rem}
+    .featured .feat-overlay{padding:20px}
+    .work-card{padding:28px 22px}
+    .foot-grid{flex-direction:column}
+    .praise-card{flex:0 0 100%}
+    .praise-arrow{display:none}
+    .foot-bottom{flex-direction:column}
+  }
+  /* ---------- VSL section ---------- */
+  #social{background:var(--midnight);position:relative;overflow:hidden}
+  #social .orb{width:520px;height:520px;background:var(--amber);top:-180px;right:-180px;opacity:.09}
+  .vsl-head{text-align:center;max-width:66ch;margin:0 auto 48px;position:relative;z-index:2}
+  .vsl-head h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.06;margin:14px 0 18px}
+  .vsl-head .vsl-sub{color:var(--cream-dim);font-size:1.1rem;max-width:52ch;margin:0 auto;line-height:1.65}
+  .vsl-frame{
+    position:relative;z-index:2;max-width:860px;margin:0 auto 44px;
+    border-radius:18px;overflow:hidden;border:1px solid rgba(232,160,74,.3);
+    box-shadow:0 0 90px rgba(232,160,74,.12),0 30px 80px rgba(0,0,0,.55);
+    aspect-ratio:16/9;
+  }
+  .vsl-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  .vsl-proof{
+    position:relative;z-index:2;display:flex;justify-content:center;flex-wrap:wrap;
+    gap:14px;margin:0 auto 48px;max-width:820px;
+  }
+  .vsl-chip{
+    display:flex;align-items:center;gap:10px;
+    border:1px solid rgba(232,160,74,.28);border-radius:40px;
+    padding:13px 22px;background:rgba(232,160,74,.055);font-size:.93rem;color:var(--cream);
+  }
+  .vsl-chip svg{flex-shrink:0;color:var(--amber)}
+  .vsl-cta-wrap{position:relative;z-index:2;text-align:center}
+  .vsl-cta-wrap .btn-primary{font-size:1.05rem;padding:17px 36px}
+  .vsl-urgency{margin-top:14px;font-size:.86rem;color:var(--cream-dim);letter-spacing:.04em}
+  .vsl-urgency strong{color:var(--amber-soft);font-weight:500}
+  @media(max-width:560px){
+    .vsl-play-btn{width:64px;height:64px}
+    .vsl-chip{padding:11px 16px;font-size:.86rem}
+  }
+
+  /* ---------- live gallery ---------- */
+  #gallery{background:var(--midnight-deep);padding:90px 0 100px;position:relative;overflow:hidden}
+  #gallery .orb{width:460px;height:460px;background:var(--rose);top:-140px;left:-140px;opacity:.09}
+  .gallery-head{text-align:center;max-width:60ch;margin:0 auto 50px;position:relative;z-index:2}
+  .gallery-head h2{font-family:var(--display);font-weight:400;font-size:clamp(2.1rem,4.5vw,3.4rem);line-height:1.05;margin:14px 0 10px}
+  .gallery-head p{color:var(--cream-dim);font-size:1.05rem}
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    position:relative;z-index:2;
+  }
+  .g-item{
+    aspect-ratio:4/3;
+    border-radius:12px;overflow:hidden;position:relative;
+    background:linear-gradient(160deg,#1e1938,#141228);
+  }
+  .g-item img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    transition:transform .45s cubic-bezier(.25,.46,.45,.94);
+  }
+  .g-item:hover img{transform:scale(1.06)}
+  .g-item .g-ov{
+    position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(13,11,28,.55),transparent 55%);
+    opacity:0;transition:opacity .3s;pointer-events:none;
+  }
+  .g-item:hover .g-ov{opacity:1}
+  @media(max-width:900px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:560px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="brand">Gauri<span>.</span></div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#social">Watch</a>
+    <a href="#work">Book Shows</a>
+    <a href="#work" class="nav-cta">Book Gauri</a>
+  </div>
+  <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav .links').classList.toggle('open')">☰</button>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-crowd-new.jpg" alt="Gauri Tidke performing live on stage in front of a massive concert crowd">
+  </div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Singer&nbsp;·&nbsp;Songwriter&nbsp;·&nbsp;Guitarist</span>
+        <h1><em class="l1">Live music</em>they'll remember.</h1>
+        <p class="sub">Hindi indie, performed live. Book Gauri for your corporate event, festival or private show — a voice and guitar that holds the whole room.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Book Gauri for your event
+          </a>
+          <!-- [YT-CHANNEL] -->
+          <a href="https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP" target="_blank" rel="noopener" class="btn-outline">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
+            Watch on YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="strip">
+  <div class="strip-track">
+    <span>Live & acoustic <b>✦</b> Original Hindi songs <b>✦</b> Voice + guitar <b>✦</b> New releases ongoing <b>✦</b> Live & acoustic <b>✦</b> Original Hindi songs <b>✦</b> Voice + guitar <b>✦</b> New releases ongoing <b>✦</b></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <img src="assets/gauri-portrait.jpg" alt="Gauri Tidke portrait" style="width:100%;height:100%;object-fit:cover;object-position:center 20%">
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">The Artist</span>
+        <h2>Meet Gauri Tidke</h2>
+        <p><span class="lead">I'm a small-town girl who chose an acoustic guitar over science textbooks,</span> eventually winning a televised reality show with my band. When the lockdown suddenly hit and everything collapsed, I found myself stuck in a comfort zone — until I realised music isn't just a performance, it's our rawest human connection.</p>
+        <p>I stepped out as an independent Hindi indie singer-songwriter, creating original songs that speak the things we feel but rarely say out loud. Music is the ultimate soundtrack to our loneliest tears and happiest celebrations. I record everything in single, honest takes to make you feel that undeniable power — and I can't wait to make you dance to my tunes.</p>
+        <div class="about-tags">
+          <span>Hindi Indie</span>
+          <span>Acoustic</span>
+          <span>Original Songwriting</span>
+          <span>Live Vocals</span>
+          <span>Guitar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<section id="music">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Listen</span>
+      <h2>The Music</h2>
+      <p>Out now and on the way. Tap any song to watch the full video on YouTube.</p>
+    </div>
+
+    <!-- FEATURED DEBUT SINGLE — Aadhi Raat (releases 3 July). Update https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP with the channel link -->
+    <div class="featured reveal">
+      <img src="assets/aadhi-raat.jpg" alt="Aadhi Raat — debut single by Gauri, releasing 3 July">
+      <div class="feat-overlay">
+        <div class="feat-inner">
+          <span class="feat-tag">Debut Single · Coming 3 July</span>
+          <div class="feat-sub" style="margin-bottom:14px">Gauri Tidke <span style="opacity:.5">·</span> Notmarried Studios × That Trending Song</div>
+          <div class="countdown" id="countdown" aria-label="Time until release">
+            <div class="cd-unit"><span class="cd-num" id="cd-d">--</span><span class="cd-lab">Days</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span class="cd-num" id="cd-h">--</span><span class="cd-lab">Hrs</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span class="cd-num" id="cd-m">--</span><span class="cd-lab">Min</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span class="cd-num" id="cd-s">--</span><span class="cd-lab">Sec</span></div>
+          </div>
+          <a href="https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP" target="_blank" rel="noopener" class="feat-reminder">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+            Set a reminder — subscribe on YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="song-grid">
+
+      <!-- ANKAHA — debut album -->
+      <div class="song-card reveal" style="overflow:hidden">
+        <img src="assets/ankaha.jpg" alt="ankaha — debut album by Gauri"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7"
+             onerror="this.style.display='none'">
+        <div class="song-meta">
+          <span class="tag">Debut Album</span>
+          <h3>ankaha</h3>
+          <div class="feat">Out now — listen on Spotify & JioSaavn</div>
+        </div>
+      </div>
+
+      <!-- subscribe card -->
+      <a href="https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP" target="_blank" rel="noopener" class="song-card reveal" style="background:linear-gradient(160deg,rgba(232,160,74,.18),rgba(217,138,138,.1));border-color:var(--amber)">
+        <div class="song-meta" style="background:none">
+          <span class="tag">Never miss one</span>
+          <h3 style="margin-bottom:10px">Subscribe on YouTube</h3>
+          <div class="feat">Get every new song the day it drops →</div>
+        </div>
+      </a>
+
+    </div>
+    <div class="music-cta reveal">
+      <a href="https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP" target="_blank" rel="noopener" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg>
+        See all videos on YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- REACH / PROOF -->
+<section id="reach">
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-left:auto;margin-right:auto;text-align:center">
+      <span class="eyebrow">By the numbers</span>
+      <h2>A stage that never stays empty</h2>
+      <p style="margin:0 auto">Three hundred shows, forty-five thousand people, one album — and a growing list of events that keep calling back.</p>
+    </div>
+    <div class="metric-grid">
+      <div class="metric reveal"><div class="num">300+</div><div class="lab">Live shows performed</div><div class="note">across India</div></div>
+      <div class="metric reveal"><div class="num">45K+</div><div class="lab">People in the audience</div><div class="note">and counting</div></div>
+      <div class="metric reveal"><div class="num">10</div><div class="lab">Original songs</div><div class="note">1 full album</div></div>
+      <div class="metric reveal"><div class="num">50+</div><div class="lab">Event companies</div><div class="note">pan India partners</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VSL — VIDEO SALES LETTER -->
+<section id="social">
+  <div class="orb"></div>
+  <div class="wrap">
+
+    <div class="vsl-head reveal">
+      <span class="eyebrow">Watch before you book</span>
+      <h2>See why event organisers across India keep calling Gauri back</h2>
+      <p class="vsl-sub">One performance. Three hundred stages. Forty-five thousand people who walked out talking about it. Watch what your guests are about to experience.</p>
+    </div>
+
+    <div class="vsl-frame reveal">
+      <iframe
+        src="https://www.youtube.com/embed/wCWs0UeGN6I?rel=0&modestbranding=1&color=white"
+        title="Gauri Tidke — live performance"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="vsl-proof reveal">
+      <div class="vsl-chip">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+        300+ live shows across India
+      </div>
+      <div class="vsl-chip">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+        45,000+ people in the audience
+      </div>
+      <div class="vsl-chip">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+        50+ event companies · pan India
+      </div>
+      <div class="vsl-chip">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+        1 album · 10 original songs
+      </div>
+    </div>
+
+    <div class="vsl-cta-wrap reveal">
+      <a href="#work" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Check Gauri's availability
+      </a>
+      <p class="vsl-urgency">Dates fill fast — <strong>corporate and festival season books months ahead</strong></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIVE GALLERY -->
+<section id="gallery">
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="gallery-head reveal">
+      <span class="eyebrow">On stage</span>
+      <h2>Gauri, live</h2>
+      <p>Three hundred shows and counting — here's what it looks like from the front row.</p>
+    </div>
+    <div class="gallery-grid">
+
+      <!-- Row 1: big crowd → closeup → closeup -->
+      <div class="g-item reveal">
+        <img src="assets/live-6.jpg" alt="Gauri Tidke on stage facing a packed outdoor crowd">
+        <div class="g-ov"></div>
+      </div>
+      <div class="g-item reveal">
+        <img src="assets/live-1.jpg" alt="Gauri Tidke singing live at the mic">
+        <div class="g-ov"></div>
+      </div>
+      <div class="g-item reveal">
+        <img src="assets/live-3.jpg" alt="Gauri Tidke smiling on stage with guitar">
+        <div class="g-ov"></div>
+      </div>
+      <!-- Row 2: massive indoor crowd → closeup → outdoor crowd -->
+      <div class="g-item reveal">
+        <img src="assets/live-7.jpg" alt="Gauri Tidke performing at the Nashik Business Association Diwali celebration">
+        <div class="g-ov"></div>
+      </div>
+      <div class="g-item reveal">
+        <img src="assets/live-2.jpg" alt="Gauri Tidke playing guitar on stage">
+        <div class="g-ov"></div>
+      </div>
+      <div class="g-item reveal">
+        <img src="assets/live-8.jpg" alt="Gauri Tidke live at an outdoor night show with fairy lights">
+        <div class="g-ov"></div>
+      </div>
+      <!-- Row 3: fairy lights wide → intimate night show -->
+      <div class="g-item reveal">
+        <img src="assets/live-4.jpg" alt="Gauri Tidke performing at an outdoor concert">
+        <div class="g-ov"></div>
+      </div>
+      <div class="g-item reveal">
+        <img src="assets/live-5.jpg" alt="Gauri Tidke performing at a private evening show">
+        <div class="g-ov"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="praise">
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="praise-head reveal">
+      <span class="eyebrow">Kind words</span>
+      <h2>What organizers say</h2>
+      <p>From corporate stages to college fests — here's what people say after booking Gauri.</p>
+    </div>
+    <div class="praise-carousel">
+      <button class="praise-arrow praise-prev" aria-label="Previous testimonial">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="praise-track-outer">
+        <div class="praise-track">
+
+          <div class="praise-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"We had Gauri perform at our Techfest and she had 1,200 students singing along within the first two songs. Effortless stage presence, zero drama backstage. Already confirmed for next year."</blockquote>
+            <div class="who">
+              <div class="avatar">Y</div>
+              <div><div class="name">Yash Agrawal</div><div class="role">Cultural Committee Head, K.K. Wagh Engineering College · Nashik</div></div>
+            </div>
+          </div>
+
+          <div class="praise-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"She performed at our NBA Diwali celebration with 800+ guests and not a single person left the floor. Professional, on time, and genuinely brilliant — exactly what we needed."</blockquote>
+            <div class="who">
+              <div class="avatar">V</div>
+              <div><div class="name">Vijay Patil</div><div class="role">Event Head, Nashik Business Association · Nashik</div></div>
+            </div>
+          </div>
+
+          <div class="praise-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Gauri's acoustic set at our wine evening created a mood no playlist ever could. Guests were asking for her number before they left. We've already booked her for our next event."</blockquote>
+            <div class="who">
+              <div class="avatar">P</div>
+              <div><div class="name">Priyanka Mahajan</div><div class="role">Events Manager, Sula Vineyards · Nashik</div></div>
+            </div>
+          </div>
+
+          <div class="praise-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Her voice filled our entire auditorium without losing any warmth. The students went absolutely crazy — it was the loudest crowd reaction we've had at an annual day in years."</blockquote>
+            <div class="who">
+              <div class="avatar">R</div>
+              <div><div class="name">Rohan Bhosle</div><div class="role">Cultural Secretary, MVP's College of Commerce · Nashik</div></div>
+            </div>
+          </div>
+
+          <div class="praise-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"We wanted our sangeet to feel special, not just loud. Gauri mixed our favourite old songs with her originals and the whole family was in tears — the good kind. Truly unforgettable."</blockquote>
+            <div class="who">
+              <div class="avatar">S</div>
+              <div><div class="name">Sneha &amp; Karan Joshi</div><div class="role">Private Wedding Sangeet · Nashik</div></div>
+            </div>
+          </div>
+
+          <div class="praise-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"She learnt a song specially for our anniversary dinner — completely unprompted after one conversation. Our guests are still talking about that evening three months later."</blockquote>
+            <div class="who">
+              <div class="avatar">A</div>
+              <div><div class="name">Aditya &amp; Pooja Sharma</div><div class="role">Anniversary Celebration · Pune</div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="praise-arrow praise-next" aria-label="Next testimonial">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+    <div class="praise-nav"><div class="praise-dots"></div></div>
+  </div>
+</section>
+
+<!-- BOOK / LIVE SHOWS -->
+<section id="work">
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="work-grid">
+      <div class="work-text reveal">
+        <span class="eyebrow">Book Gauri — Live</span>
+        <h2>Bring Gauri to your stage</h2>
+        <p>Available for corporate events, festivals, college fests, private parties and brand launches across India. A live voice-and-guitar set that holds a room — solo acoustic or full band.</p>
+        <ul class="work-list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4"/></svg>
+            <span><b>Corporate events & launches</b> — conferences, office parties, product launches, brand activations.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            <span><b>Festivals & college fests</b> — live original sets and curated covers for a crowd.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            <span><b>Private events & weddings</b> — intimate acoustic performances for special occasions.</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.3 2.3 7.3-6.3-4.6L5.7 21 8 14 2 9.7h7.6z"/></svg>
+            <span><b>Brand collaborations</b> — original jingles, anthem songs and sync for ads & films.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="work-card reveal">
+        <span class="eyebrow">Booking Enquiry</span>
+        <h3>Check availability</h3>
+        <p>Tell us about your event and we'll get back within a day with availability and a quote. Managed by Notmarried Studios.</p>
+
+        <!-- NETLIFY FORM — submissions appear in your Netlify dashboard (Forms tab) + email notifications.
+             After deploy: Netlify → Site → Forms → set up email notifications to your inbox. -->
+        <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?booked=1">
+          <input type="hidden" name="form-name" value="booking">
+          <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+
+          <div class="field">
+            <label for="bk-name">Your name</label>
+            <input id="bk-name" name="name" type="text" required placeholder="Name / company">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bk-email">Email</label>
+              <input id="bk-email" name="email" type="email" required placeholder="you@email.com">
+            </div>
+            <div class="field">
+              <label for="bk-phone">Phone</label>
+              <input id="bk-phone" name="phone" type="tel" required placeholder="+91…">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bk-type">Event type</label>
+              <select id="bk-type" name="event_type" required>
+                <option value="" disabled selected>Select event type</option>
+                <option>Corporate event</option>
+                <option>Festival / college fest</option>
+                <option>Private event / wedding</option>
+                <option>Brand collaboration</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bk-date">Event date</label>
+              <input id="bk-date" name="event_date" type="date" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="bk-city">City</label>
+            <input id="bk-city" name="city" type="text" required placeholder="Where is the event?">
+          </div>
+          <div class="field">
+            <label for="bk-msg">Details</label>
+            <textarea id="bk-msg" name="message" rows="3" required placeholder="Tell us about your event, audience size, and what you have in mind."></textarea>
+          </div>
+          <button type="submit" class="bigbtn" disabled>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Book via Email
+          </button>
+        </form>
+        <a class="altbtn disabled" href="https://wa.me/919511788719" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.28-.14-1.65-.81-1.9-.9-.26-.1-.44-.14-.63.14-.19.28-.72.9-.88 1.09-.16.18-.33.2-.61.07-.28-.14-1.17-.43-2.24-1.38-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.17.19-.28.28-.47.09-.18.05-.35-.02-.49-.07-.14-.63-1.51-.86-2.07-.23-.54-.46-.47-.63-.47-.16 0-.35-.02-.54-.02-.19 0-.49.07-.75.35-.26.28-1 .97-1 2.36 0 1.4 1.02 2.75 1.16 2.94.14.18 2 3.05 4.86 4.28.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.68-.69 1.92-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.54-.33zm-5.45 7.44h-.02a9.89 9.89 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.44-9.88 9.9-9.88 2.65 0 5.13 1.03 7 2.9a9.83 9.83 0 0 1 2.89 6.99c-.01 5.46-4.44 9.89-9.88 9.89zm8.41-18.29A11.82 11.82 0 0 0 12.02 0C5.43 0 .07 5.36.07 11.95c0 2.1.55 4.16 1.59 5.97L0 24l6.25-1.64a11.93 11.93 0 0 0 5.72 1.46h.01c6.58 0 11.94-5.36 11.94-11.95 0-3.19-1.24-6.19-3.5-8.44z"/></svg>
+          Book via WhatsApp
+        </a>
+        <p class="reply-note">We reply to all enquiries within 24 hours — via email and WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Gauri<span>.</span>
+          <p>Hindi indie artist. Voice, guitar, and a story in every song.</p>
+        </div>
+        <div class="foot-social">
+          <a href="https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP" target="_blank" rel="noopener" aria-label="YouTube"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.5v-7l6.3 3.5-6.3 3.5z"/></svg></a>
+          <a href="https://www.instagram.com/gauritidke_smile/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://open.spotify.com/artist/4un1UZ8XgYExpHY6Oe861R" target="_blank" rel="noopener" aria-label="Spotify"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm5.5 17.3a.75.75 0 0 1-1 .25c-2.8-1.7-6.3-2.1-10.4-1.2a.75.75 0 1 1-.3-1.47c4.5-1 8.4-.5 11.5 1.4a.75.75 0 0 1 .2 1.02zm1.5-3.3a.94.94 0 0 1-1.3.3c-3.2-2-8-2.5-11.8-1.4a.94.94 0 1 1-.5-1.8c4.3-1.3 9.6-.7 13.3 1.6a.94.94 0 0 1 .3 1.3zm.1-3.4C15.8 8.3 9.4 8.1 5.7 9.2a1.12 1.12 0 1 1-.65-2.15C9.3 5.8 16.4 6 20.7 8.6a1.12 1.12 0 1 1-1.2 1.9z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-links">
+        <strong style="color:var(--cream);margin-bottom:4px">Explore</strong>
+        <a href="#about">About</a>
+        <a href="#music">Music</a>
+        <a href="#social">Instagram</a>
+        <a href="#work">Book Shows</a>
+      </div>
+      <div class="foot-links">
+        <strong style="color:var(--cream);margin-bottom:4px">Listen</strong>
+        <a href="https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://open.spotify.com/artist/4un1UZ8XgYExpHY6Oe861R" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://www.jiosaavn.com/artist/gauri-tidke/CcgBjA5t7ak_" target="_blank" rel="noopener">JioSaavn</a>
+        <a href="https://www.instagram.com/gauritidke_smile/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Gauri Tidke · Managed by Notmarried Studios</span>
+      <span>Made for the music.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // countdown to release — 3 July, midnight IST (UTC+5:30)
+  (function(){
+    const target = new Date('2026-07-03T00:00:00+05:30').getTime();
+    const d=document.getElementById('cd-d'),h=document.getElementById('cd-h'),
+          m=document.getElementById('cd-m'),s=document.getElementById('cd-s');
+    if(!d) return;
+    function pad(n){return String(n).padStart(2,'0')}
+    function tick(){
+      const now=Date.now(), gap=target-now;
+      if(gap<=0){
+        // released — swap countdown + button for a "watch now" state
+        const cd=document.getElementById('countdown');
+        if(cd) cd.style.display='none';
+        const tag=document.querySelector('.feat-tag');
+        if(tag) tag.textContent='Debut Single · Out Now';
+        const btn=document.querySelector('.feat-reminder');
+        if(btn){
+          btn.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Watch the full video on YouTube';
+        }
+        clearInterval(timer);
+        return;
+      }
+      const dd=Math.floor(gap/86400000),
+            hh=Math.floor(gap%86400000/3600000),
+            mm=Math.floor(gap%3600000/60000),
+            ss=Math.floor(gap%60000/1000);
+      d.textContent=pad(dd);h.textContent=pad(hh);m.textContent=pad(mm);s.textContent=pad(ss);
+    }
+    tick(); const timer=setInterval(tick,1000);
+  })();
+
+  // scroll reveal — add .in immediately so content is always visible
+  document.querySelectorAll('.reveal').forEach((el,i)=>{
+    el.style.transitionDelay=(i%3*0.08)+'s';
+    el.classList.add('in');
+  });
+  // nav bg on scroll
+  addEventListener('scroll',()=>{document.getElementById('nav').style.background=scrollY>40?'rgba(13,11,28,.92)':'linear-gradient(to bottom,rgba(13,11,28,.85),transparent)'});
+
+  // testimonials carousel
+  (function(){
+    const track=document.querySelector('.praise-track');
+    if(!track) return;
+    const cards=Array.from(document.querySelectorAll('.praise-card'));
+    const dotsWrap=document.querySelector('.praise-dots');
+    let cur=0,autoTimer;
+    function vis(){return window.innerWidth<=560?1:window.innerWidth<=900?2:3}
+    function total(){return Math.max(1,cards.length-vis()+1)}
+    function buildDots(){
+      dotsWrap.innerHTML='';
+      for(let i=0;i<total();i++){
+        const b=document.createElement('button');
+        b.className='praise-dot'+(i===cur?' active':'');
+        b.setAttribute('aria-label','Slide '+(i+1));
+        b.addEventListener('click',()=>go(i));
+        dotsWrap.appendChild(b);
+      }
+    }
+    function go(idx){
+      cur=Math.max(0,Math.min(idx,total()-1));
+      const w=cards[0].getBoundingClientRect().width+22;
+      track.style.transform='translateX(-'+(cur*w)+'px)';
+      document.querySelectorAll('.praise-dot').forEach((d,i)=>d.classList.toggle('active',i===cur));
+      startAuto();
+    }
+    function startAuto(){
+      clearInterval(autoTimer);
+      autoTimer=setInterval(()=>go(cur+1>=total()?0:cur+1),5000);
+    }
+    document.querySelector('.praise-prev').addEventListener('click',()=>go(cur-1));
+    document.querySelector('.praise-next').addEventListener('click',()=>go(cur+1));
+    window.addEventListener('resize',()=>{buildDots();go(Math.min(cur,total()-1))});
+    buildDots();
+    startAuto();
+  })();
+
+  // booking form — dual channel: email + WhatsApp, both save to spreadsheet
+  (function(){
+    const form = document.querySelector('form[name="booking"]');
+    if(!form) return;
+    const WA = '919511788719';
+    const TO_EMAIL = 'gauritidke0@gmail.com';
+    const CC_EMAIL = 'thattrendingsong@gmail.com';
+
+    const submitBtn = form.querySelector('button.bigbtn');
+    const altBtn    = form.closest('.work-card').querySelector('.altbtn');
+
+    // enable/disable both buttons based on form validity
+    function syncBtns(){
+      const ok = form.checkValidity();
+      submitBtn.disabled = !ok;
+      altBtn.classList.toggle('disabled', !ok);
+    }
+    form.addEventListener('input', syncBtns);
+    form.addEventListener('change', syncBtns);
+    syncBtns();
+
+    function getVals(){
+      const fd = new FormData(form);
+      return {fd, v: k => fd.get(k)||''};
+    }
+
+    // ← paste your deployed Apps Script URL here once deployed
+    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwBXz4GP-bh2oebdoWuIJ8gThaCo58UamYPJgdQs3nbHOCYU2QvMsGLliCTiJ3Dlec0/exec';
+
+    // Save enquiry to Google Sheets + Netlify Forms backup
+    function saveToSheet(fd){
+      // Google Sheets via Apps Script
+      if(!SHEET_URL.startsWith('#')){
+        fetch(SHEET_URL,{
+          method:'POST',mode:'no-cors',
+          headers:{'Content-Type':'application/x-www-form-urlencoded'},
+          body:new URLSearchParams(fd).toString()
+        });
+      }
+      // Netlify Forms backup
+      fetch('/',{
+        method:'POST',
+        headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body:new URLSearchParams(fd).toString()
+      });
+    }
+
+    function buildMessage(v){
+      return [
+        'Hi Gauri! I\'d like to book you for an event.\n',
+        'Name: '       + v('name'),
+        'Email: '      + v('email'),
+        'Phone: '      + v('phone'),
+        'Event type: ' + v('event_type'),
+        v('event_date') ? 'Date: '    + v('event_date') : null,
+        v('city')       ? 'City: '    + v('city')       : null,
+        v('message')    ? 'Details: ' + v('message')    : null,
+      ].filter(Boolean).join('\n');
+    }
+
+    // Button 1 — Email: save to spreadsheet + open mailto with form data
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const {fd, v} = getVals();
+      saveToSheet(fd);
+      const subject = encodeURIComponent('Booking Enquiry — ' + (v('event_type') || 'Event'));
+      const body = encodeURIComponent(buildMessage(v));
+      const cc = encodeURIComponent(CC_EMAIL);
+      window.location.href = 'mailto:' + TO_EMAIL + '?cc=' + cc + '&subject=' + subject + '&body=' + body;
+    });
+
+    // Button 2 — WhatsApp: save to spreadsheet + open WhatsApp with all form data
+    altBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      const {fd, v} = getVals();
+      saveToSheet(fd);
+      window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(buildMessage(v)),'_blank');
+    });
+  })();
+
+  // year + booking success banner (Netlify redirects back with ?booked=1)
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  if(location.search.indexOf('booked=1')>-1){
+    const card=document.querySelector('.work-card');
+    if(card){
+      const b=document.createElement('div');
+      b.className='form-success';
+      b.innerHTML='<b>Thank you \u2014 enquiry received.</b> We\u2019ll get back to you within a day with availability and details.';
+      const form=card.querySelector('form');
+      card.insertBefore(b, form);
+      form.style.display='none';
+      setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'center'}),300);
+    }
+  }
+</script>
+</body>
+</html>
