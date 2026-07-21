@@ -268,6 +268,21 @@
     text-transform:uppercase;color:var(--cream-dim);border:1px solid var(--line);
     padding:5px 11px;border-radius:30px;
   }
+  /* single full-width card (subscribe) — no 16/10 box, hugs its content */
+  .song-grid.solo{grid-template-columns:1fr}
+  .song-grid.solo .song-card{aspect-ratio:auto}
+  /* latest song releases — embedded videos */
+  .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+  .video-card{
+    border-radius:14px;overflow:hidden;border:1px solid var(--line);
+    background:linear-gradient(170deg,#221c3c,#16122c);
+    transition:transform .3s,border-color .3s;
+  }
+  .video-card:hover{transform:translateY(-5px);border-color:var(--amber)}
+  .video-card .vid{position:relative;aspect-ratio:16/9}
+  .video-card .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  .video-card .song-meta{background:none;padding:18px 20px 20px}
+  @media(max-width:700px){.video-grid{grid-template-columns:1fr}}
   .music-cta{text-align:center;margin-top:48px}
 
   /* ---------- metrics / proof ---------- */
@@ -675,9 +690,10 @@
       <p>Out now and on the way. Tap any song to watch the full video on YouTube.</p>
     </div>
 
-    <!-- FEATURED DEBUT SINGLE — Aadhi Raat (releases 3 July). Update https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP with the channel link -->
+    <!-- FEATURED DEBUT SINGLE — Aadhi Raat. Static local artwork by design; the countdown
+         auto-swaps the tag and button to "Out Now" once the release date has passed. -->
     <div class="featured reveal">
-      <img src="assets/aadhi-raat.jpg" alt="Aadhi Raat — debut single by Gauri, releasing 3 July">
+      <img src="assets/aadhi-raat.jpg" alt="Aadhi Raat — debut single by Gauri Tidke">
       <div class="feat-overlay">
         <div class="feat-inner">
           <span class="feat-tag">Debut Single · Coming 3 July</span>
@@ -699,19 +715,51 @@
       </div>
     </div>
 
-    <div class="song-grid">
+    <!-- LATEST SONG RELEASES — the two most recent official music videos.
+         Video IDs are fixed on purpose so BTS/teaser uploads never take these slots.
+         When a new song drops, swap the ID in the first card and shift the rest down. -->
+    <div class="reveal" style="text-align:center;margin-bottom:16px">
+      <span class="eyebrow">Latest releases</span>
+    </div>
+    <div class="video-grid">
 
-      <!-- ANKAHA — debut album -->
-      <div class="song-card reveal" style="overflow:hidden">
-        <img src="assets/ankaha.jpg" alt="ankaha — debut album by Gauri"
-             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.7"
-             onerror="this.style.display='none'">
+      <div class="video-card reveal">
+        <div class="vid">
+          <iframe
+            src="https://www.youtube.com/embed/cv7Dz0hBpxg?rel=0&modestbranding=1&color=white"
+            title="Gauri — Bas Tu Hi (बस तू ही) | Official Music Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
         <div class="song-meta">
-          <span class="tag">Debut Album</span>
-          <h3>ankaha</h3>
-          <div class="feat">Out now — listen on Spotify & JioSaavn</div>
+          <span class="tag">Latest Single</span>
+          <h3>Bas Tu Hi</h3>
+          <div class="feat">Official music video · from the album ankaha</div>
         </div>
       </div>
+
+      <div class="video-card reveal">
+        <div class="vid">
+          <iframe
+            src="https://www.youtube.com/embed/CffAeQuKF9o?rel=0&modestbranding=1&color=white"
+            title="Gauri Tidke — Aadhi Raat | Official Music Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="song-meta">
+          <span class="tag">Debut Single</span>
+          <h3>Aadhi Raat</h3>
+          <div class="feat">Official music video · from the album ankaha</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="song-grid solo">
 
       <!-- subscribe card -->
       <a href="https://youtu.be/2etHf30ZFzo?si=VDN8jqLIAePZTpmP" target="_blank" rel="noopener" class="song-card reveal" style="background:linear-gradient(160deg,rgba(232,160,74,.18),rgba(217,138,138,.1));border-color:var(--amber)">
@@ -763,7 +811,7 @@
 
     <div class="vsl-frame reveal">
       <iframe
-        src="https://youtu.be/LbzDg8k2rAA?rel=0&modestbranding=1&color=white"
+        src="https://www.youtube.com/embed/LbzDg8k2rAA?rel=0&modestbranding=1&color=white"
         title="Gauri Tidke — live performance"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
