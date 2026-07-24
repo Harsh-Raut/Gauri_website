@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gauri Tidke — Singer, Songwriter, Guitarist</title>
 <meta name="description" content="Gauri Tidke — Hindi indie artist. Voice, guitar, and a story in every song. Watch the latest releases and work with Gauri on collaborations and live shows.">
+<meta name="google-site-verification" content="M12DyqbQ3oZFLLda3kpxbN8f7AroMGClQ8rPsCQNh3w" />
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQMVXTCXKS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GQMVXTCXKS');
+</script>
 
 <!-- ============================================================
      EDIT GUIDE (search for these tags to drop in your content):
@@ -593,6 +603,11 @@
     opacity:0;transition:opacity .3s;pointer-events:none;
   }
   .g-item:hover .g-ov{opacity:1}
+  /* tall portrait video feature — spans 2 rows, top-left.
+     Video is absolutely positioned so the photo rows drive the height
+     and the two columns beside it stay aligned. */
+  .g-item.g-video{grid-row:span 2;aspect-ratio:auto;position:relative}
+  .g-item.g-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
   @media(max-width:900px){
     .gallery-grid{grid-template-columns:repeat(2,1fr)}
   }
@@ -860,6 +875,11 @@
     </div>
     <div class="gallery-grid">
 
+      <!-- Featured clip from a recent event (portrait video, spans 2 rows) -->
+      <div class="g-item g-video reveal">
+        <video src="assets/final.mp4" controls playsinline preload="metadata"></video>
+        <div class="g-ov"></div>
+      </div>
       <!-- Row 1: big crowd → closeup → closeup -->
       <div class="g-item reveal">
         <img src="assets/live-6.jpg" alt="Gauri Tidke on stage facing a packed outdoor crowd">
@@ -883,16 +903,12 @@
         <div class="g-ov"></div>
       </div>
       <div class="g-item reveal">
-        <img src="assets/live-8.jpg" alt="Gauri Tidke live at an outdoor night show with fairy lights">
+        <img src="assets/live-5.jpg" alt="Gauri Tidke performing at a private evening show">
         <div class="g-ov"></div>
       </div>
-      <!-- Row 3: fairy lights wide → intimate night show -->
+      <!-- Row 3: fairy lights wide -->
       <div class="g-item reveal">
         <img src="assets/live-4.jpg" alt="Gauri Tidke performing at an outdoor concert">
-        <div class="g-ov"></div>
-      </div>
-      <div class="g-item reveal">
-        <img src="assets/live-5.jpg" alt="Gauri Tidke performing at a private evening show">
         <div class="g-ov"></div>
       </div>
 
@@ -1254,6 +1270,7 @@
       e.preventDefault();
       const {fd, v} = getVals();
       saveToSheet(fd);
+      if(window.gtag) gtag('event','booking_submit',{method:'email',event_type:v('event_type')});
       const subject = encodeURIComponent('Booking Enquiry — ' + (v('event_type') || 'Event'));
       const body = encodeURIComponent(buildMessage(v));
       const cc = encodeURIComponent(CC_EMAIL);
@@ -1265,6 +1282,7 @@
       e.preventDefault();
       const {fd, v} = getVals();
       saveToSheet(fd);
+      if(window.gtag) gtag('event','booking_submit',{method:'whatsapp',event_type:v('event_type')});
       window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(buildMessage(v)),'_blank');
     });
   })();
