@@ -6,6 +6,28 @@
 <title>Gauri Tidke — Singer, Songwriter, Guitarist</title>
 <meta name="description" content="Gauri Tidke — Hindi indie artist. Voice, guitar, and a story in every song. Watch the latest releases and work with Gauri on collaborations and live shows.">
 <meta name="google-site-verification" content="M12DyqbQ3oZFLLda3kpxbN8f7AroMGClQ8rPsCQNh3w" />
+<link rel="canonical" href="https://gauri.thattrendingsong.com/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+<!-- Social share preview (Open Graph — WhatsApp, Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gauri Tidke">
+<meta property="og:title" content="Gauri Tidke — Singer, Songwriter, Guitarist">
+<meta property="og:description" content="Hindi indie, performed live. Watch the latest releases and book Gauri for your corporate event, festival, or private show.">
+<meta property="og:url" content="https://gauri.thattrendingsong.com/">
+<meta property="og:image" content="https://gauri.thattrendingsong.com/assets/aadhi-raat.jpg">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gauri Tidke — Singer, Songwriter, Guitarist">
+<meta name="twitter:description" content="Hindi indie, performed live. Watch the latest releases and book Gauri for your event.">
+<meta name="twitter:image" content="https://gauri.thattrendingsong.com/assets/aadhi-raat.jpg">
 
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQMVXTCXKS"></script>
@@ -15,6 +37,24 @@
   gtag('js', new Date());
   gtag('config', 'G-GQMVXTCXKS');
 </script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1522725509591256');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1522725509591256&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <!-- ============================================================
      EDIT GUIDE (search for these tags to drop in your content):
@@ -1271,6 +1311,7 @@
       const {fd, v} = getVals();
       saveToSheet(fd);
       if(window.gtag) gtag('event','booking_submit',{method:'email',event_type:v('event_type')});
+      if(window.fbq) fbq('track','Lead',{content_name:'Booking Enquiry',method:'email'});
       const subject = encodeURIComponent('Booking Enquiry — ' + (v('event_type') || 'Event'));
       const body = encodeURIComponent(buildMessage(v));
       const cc = encodeURIComponent(CC_EMAIL);
@@ -1283,6 +1324,7 @@
       const {fd, v} = getVals();
       saveToSheet(fd);
       if(window.gtag) gtag('event','booking_submit',{method:'whatsapp',event_type:v('event_type')});
+      if(window.fbq) fbq('track','Lead',{content_name:'Booking Enquiry',method:'whatsapp'});
       window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(buildMessage(v)),'_blank');
     });
   })();
